@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find work that moves you. Explore thoughtful opportunities from ambitious teams around the world."
+    />
+    <meta name="theme-color" content="#f6f8fc" />
+    <title>Orbit — Find work that moves you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Orbit home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="10.5" stroke="currentColor" stroke-width="2.5" />
+            <ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="currentColor" stroke-width="2.5" transform="rotate(-35 16 16)" />
+            <circle cx="25.8" cy="8.6" r="2.2" fill="currentColor" />
+          </svg>
+        </span>
+        <span>orbit<span class="brand-period">.</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="#opportunities">Find a job</a>
+        <a class="nav-link" href="#companies">Companies</a>
+        <a class="nav-link" href="#how-it-works">Career resources</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="text-button" type="button" data-toast="Sign in will be available when accounts are connected.">Sign in</button>
+        <button class="button button-dark button-small" type="button" data-toast="Account creation will be available when accounts are connected.">
+          Create account <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+          <h1 id="hero-title">Find work that<br />moves <span>you.</span></h1>
+          <p class="hero-description">
+            Good work changes everything. Meet the teams, ideas, and opportunities that feel like your next step.
+          </p>
+          <form class="search-panel" id="job-search" role="search">
+            <label class="search-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+              <span class="sr-only">Job title or keyword</span>
+              <input id="keyword" type="search" placeholder="Job title or keyword" autocomplete="off" />
+            </label>
+            <span class="search-divider" aria-hidden="true"></span>
+            <label class="search-field location-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg>
+              <span class="sr-only">Location</span>
+              <input id="location" type="search" placeholder="City or remote" autocomplete="off" />
+            </label>
+            <button class="button button-blue search-button" type="submit">Explore jobs <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="popular-searches">
+            <span>Popular:</span>
+            <button type="button" data-search-term="Product Designer">Product Designer</button>
+            <button type="button" data-search-term="Remote">Remote</button>
+            <button type="button" data-search-term="Engineering">Engineering</button>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar avatar-one">J</span><span class="avatar avatar-two">M</span><span class="avatar avatar-three">A</span><span class="avatar avatar-four">+</span>
+            </div>
+            <p><strong>12,000+</strong> people found their next move</p>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustration of a connected global career network">
+          <div class="visual-glow"></div>
+          <div class="visual-grid"></div>
+          <div class="orbit-label"><span></span> OPPORTUNITY, EVERYWHERE</div>
+          <svg class="career-globe" viewBox="0 0 520 520" role="img" aria-label="A glowing globe connected to career opportunities">
+            <defs>
+              <radialGradient id="globeFill" cx="36%" cy="30%" r="74%">
+                <stop offset="0%" stop-color="#264c91" />
+                <stop offset="58%" stop-color="#142d62" />
+                <stop offset="100%" stop-color="#0b1537" />
+              </radialGradient>
+              <linearGradient id="globeStroke" x1="90" y1="145" x2="430" y2="390" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8fcaff" stop-opacity=".75" />
+                <stop offset="1" stop-color="#d4af37" stop-opacity=".68" />
+              </linearGradient>
+              <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+              <clipPath id="globeClip"><circle cx="260" cy="260" r="148" /></clipPath>
+            </defs>
+            <circle cx="260" cy="260" r="172" fill="#4775c4" opacity=".09" />
+            <circle cx="260" cy="260" r="158" fill="none" stroke="#a8c7ff" stroke-opacity=".12" />
+            <circle cx="260" cy="260" r="148" fill="url(#globeFill)" stroke="#a7c8ff" stroke-opacity=".52" />
+            <g clip-path="url(#globeClip)" fill="none" stroke="#a6c8ff" stroke-opacity=".22">
+              <ellipse cx="260" cy="260" rx="72" ry="148" />
+              <ellipse cx="260" cy="260" rx="126" ry="148" />
+              <ellipse cx="260" cy="260" rx="148" ry="51" />
+              <ellipse cx="260" cy="260" rx="148" ry="100" />
+              <path d="M104 260h312M126 194h268M126 326h268" />
+            </g>
+            <g fill="#d4e8ff" opacity=".82">
+              <path d="m174 195 21-12 18 9 6 17-11 13 3 19-18 13-7 25-16-7-8-29-14-14 5-25 13-9 8-20Z" />
+              <path d="m230 250 18-10 23 7 10 17-8 18-4 28-14 23-13-11-1-27-13-16 2-18Z" />
+              <path d="m271 184 25-10 31 8 7 16 21 7 4 20-20 4-12 17-21 1-10-13-19-1-9-20-16-8 2-15Z" />
+              <path d="m340 273 19-5 19 13-6 21-15 7-10 22-18-7-7-19 10-14Z" />
+            </g>
+            <g fill="none" stroke="url(#globeStroke)" stroke-width="1.5" opacity=".8">
+              <path d="M157 225 216 186 286 206 344 174" />
+              <path d="m180 310 61-35 72 22 45-40" />
+              <path d="m216 186 25 89 45-69 27 91" />
+              <path d="m157 225 23 85 61-35" />
+            </g>
+            <g filter="url(#softGlow)">
+              <circle cx="157" cy="225" r="4.5" fill="#f2d675" />
+              <circle cx="216" cy="186" r="5" fill="#c8e2ff" />
+              <circle cx="286" cy="206" r="5.5" fill="#f2d675" />
+              <circle cx="344" cy="174" r="4" fill="#d8e9ff" />
+              <circle cx="180" cy="310" r="4" fill="#d8e9ff" />
+              <circle cx="241" cy="275" r="5" fill="#f2d675" />
+              <circle cx="313" cy="297" r="4.5" fill="#c8e2ff" />
+              <circle cx="358" cy="257" r="4" fill="#f2d675" />
+            </g>
+            <ellipse cx="260" cy="260" rx="218" ry="80" fill="none" stroke="#82b3ff" stroke-opacity=".2" transform="rotate(-28 260 260)" />
+            <ellipse cx="260" cy="260" rx="218" ry="80" fill="none" stroke="#d4af37" stroke-opacity=".35" stroke-dasharray="2 13" transform="rotate(26 260 260)" />
+          </svg>
+          <div class="float-card float-card-top">
+            <span class="float-icon icon-purple">✦</span>
+            <span><strong>Design that matters</strong><small>Figma · San Francisco</small></span>
+            <span class="float-spark" aria-hidden="true">↗</span>
+          </div>
+          <div class="float-card float-card-bottom">
+            <span class="float-icon icon-gold">◎</span>
+            <span><strong>Your skills, in demand</strong><small>1,284 new matches today</small></span>
+            <span class="match-score">92%</span>
+          </div>
+          <span class="visual-star star-one">✳</span><span class="visual-star star-two">✦</span><span class="visual-star star-three">·</span>
+          <div class="visual-caption"><span class="caption-line"></span> A world of possibility, one connection away.</div>
+        </div>
+      </section>
+
+      <section class="trust-section section-shell" id="companies" aria-label="Companies hiring on Orbit">
+        <p class="section-kicker">GOOD PEOPLE. GOOD PLACES TO WORK.</p>
+        <div class="company-strip">
+          <div class="company-wordmark"><span class="company-symbol symbol-north">✳</span> northstar</div>
+          <div class="company-wordmark"><span class="company-symbol symbol-mono">◈</span> MONO</div>
+          <div class="company-wordmark"><span class="company-symbol symbol-loop">∞</span> loop</div>
+          <div class="company-wordmark"><span class="company-symbol symbol-arc">◒</span> arc studio</div>
+          <div class="company-wordmark"><span class="company-symbol symbol-cloud">☁</span> cloudline</div>
+        </div>
+      </section>
+
+      <section class="opportunities-section section-shell" id="opportunities">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> A BETTER KIND OF JOB SEARCH</div>
+            <h2>Work worth<br class="mobile-break" /> <span>showing up for.</span></h2>
+          </div>
+          <a class="arrow-link" href="#job-search">Explore all opportunities <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="job-toolbar">
+          <div class="job-tabs" role="tablist" aria-label="Job listing type">
+            <button class="job-tab selected" type="button" role="tab" aria-selected="true" data-filter="all">For you <span>06</span></button>
+            <button class="job-tab" type="button" role="tab" aria-selected="false" data-filter="remote">Remote</button>
+            <button class="job-tab" type="button" role="tab" aria-selected="false" data-filter="product">Design & product</button>
+            <button class="job-tab" type="tab" aria-selected="false" data-filter="engineering">Engineering</button>
+          </div>
+          <label class="sort-control">
+            <span>Sort by</span>
+            <select id="sort-jobs" aria-label="Sort jobs">
+              <option value="recommended">Recommended</option>
+              <option value="newest">Newest</option>
+              <option value="salary">Salary: high to low</option>
+            </select>
+          </label>
+        </div>
+        <p class="results-message" id="results-message" aria-live="polite"></p>
+
+        <div class="job-grid" id="job-grid">
+          <article class="job-card" data-title="Senior Product Designer" data-company="Northstar" data-location="San Francisco, CA · Hybrid" data-category="product" data-salary="165000" data-age="1" data-remote="false">
+            <div class="job-card-top"><span class="company-logo logo-north">N</span><button class="save-button" type="button" aria-label="Save Senior Product Designer at Northstar" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-3.8L6 21V4.8Z"></path></svg></button></div>
+            <div class="job-company">NORTHSTAR <span>·</span> Series C</div>
+            <h3>Senior Product Designer</h3>
+            <p class="job-location">San Francisco, CA <span>·</span> Hybrid</p>
+            <p class="job-summary">Shape thoughtful experiences for the next generation of financial tools.</p>
+            <div class="job-tags"><span>Product design</span><span>Full-time</span></div>
+            <div class="job-card-bottom"><div><strong>$145k–$185k</strong><small>Posted 1 day ago</small></div><button class="apply-button" type="button" data-apply="Senior Product Designer at Northstar">Apply <span aria-hidden="true">↗</span></button></div>
+          </article>
+
+          <article class="job-card" data-title="Staff Software Engineer" data-company="Cloudline" data-location="Remote · US" data-category="engineering" data-salary="210000" data-age="2" data-remote="true">
+            <div class="job-card-top"><span class="company-logo logo-cloud">☁</span><button class="save-button" type="button" aria-label="Save Staff Software Engineer at Cloudline" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-3.8L6 21V4.8Z"></path></svg></button></div>
+            <div class="job-company">CLOUDLINE <span>·</span> Climate tech</div>
+            <h3>Staff Software Engineer</h3>
+            <p class="job-location">Remote <span>·</span> United States</p>
+            <p class="job-summary">Build reliable systems that help cities understand their energy use.</p>
+            <div class="job-tags"><span>Platform</span><span>Remote</span></div>
+            <div class="job-card-bottom"><div><strong>$180k–$230k</strong><small>Posted 2 days ago</small></div><button class="apply-button" type="button" data-apply="Staff Software Engineer at Cloudline">Apply <span aria-hidden="true">↗</span></button></div>
+          </article>
+
+          <article class="job-card" data-title="Product Marketing Lead" data-company="Loop" data-location="New York, NY · Hybrid" data-category="marketing" data-salary="155000" data-age="3" data-remote="false">
+            <div class="job-card-top"><span class="company-logo logo-loop">∞</span><button class="save-button" type="button" aria-label="Save Product Marketing Lead at Loop" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-3.8L6 21V4.8Z"></path></svg></button></div>
+            <div class="job-company">LOOP <span>·</span> Purpose-led</div>
+            <h3>Product Marketing Lead</h3>
+            <p class="job-location">New York, NY <span>·</span> Hybrid</p>
+            <p class="job-summary">Bring a new kind of circular commerce to people everywhere.</p>
+            <div class="job-tags"><span>Marketing</span><span>Full-time</span></div>
+            <div class="job-card-bottom"><div><strong>$130k–$165k</strong><small>Posted 3 days ago</small></div><button class="apply-button" type="button" data-apply="Product Marketing Lead at Loop">Apply <span aria-hidden="true">↗</span></button></div>
+          </article>
+
+          <article class="job-card" data-title="Senior UX Researcher" data-company="Arc Studio" data-location="Remote · North America" data-category="product" data-salary="170000" data-age="1" data-remote="true">
+            <div class="job-card-top"><span class="company-logo logo-arc">◒</span><button class="save-button" type="button" aria-label="Save Senior UX Researcher at Arc Studio" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-3.8L6 21V4.8Z"></path></svg></button></div>
+            <div class="job-company">ARC STUDIO <span>·</span> Design tools</div>
+            <h3>Senior UX Researcher</h3>
+            <p class="job-location">Remote <span>·</span> North America</p>
+            <p class="job-summary">Make the creative process more accessible for every kind of maker.</p>
+            <div class="job-tags"><span>User research</span><span>Remote</span></div>
+            <div class="job-card-bottom"><div><strong>$150k–$190k</strong><small>Posted 1 day ago</small></div><button class="apply-button" type="button" data-apply="Senior UX Researcher at Arc Studio">Apply <span aria-hidden="true">↗</span></button></div>
+          </article>
+
+          <article class="job-card" data-title="Data Analyst, Sustainability" data-company="Northstar" data-location="Austin, TX · Remote" data-category="engineering" data-salary="135000" data-age="4" data-remote="true">
+            <div class="job-card-top"><span class="company-logo logo-north">N</span><button class="save-button" type="button" aria-label="Save Data Analyst, Sustainability at Northstar" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-3.8L6 21V4.8Z"></path></svg></button></div>
+            <div class="job-company">NORTHSTAR <span>·</span> Series C</div>
+            <h3>Data Analyst, Sustainability</h3>
+            <p class="job-location">Austin, TX <span>·</span> Remote</p>
+            <p class="job-summary">Turn complex climate data into clear, actionable insight.</p>
+            <div class="job-tags"><span>Analytics</span><span>Remote</span></div>
+            <div class="job-card-bottom"><div><strong>$115k–$155k</strong><small>Posted 4 days ago</small></div><button class="apply-button" type="button" data-apply="Data Analyst, Sustainability at Northstar">Apply <span aria-hidden="true">↗</span></button></div>
+          </article>
+
+          <article class="job-card" data-title="People Operations Partner" data-company="Mono" data-location="Chicago, IL · On-site" data-category="people" data-salary="120000" data-age="5" data-remote="false">
+            <div class="job-card-top"><span class="company-logo logo-mono">M</span><button class="save-button" type="button" aria-label="Save People Operations Partner at Mono" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-3.8L6 21V4.8Z"></path></svg></button></div>
+            <div class="job-company">MONO <span>·</span> B Corp</div>
+            <h3>People Operations Partner</h3>
+            <p class="job-location">Chicago, IL <span>·</span> On-site</p>
+            <p class="job-summary">Help a growing team do its best work, with care at the center.</p>
+            <div class="job-tags"><span>People & culture</span><span>Full-time</span></div>
+            <div class="job-card-bottom"><div><strong>$105k–$135k</strong><small>Posted 5 days ago</small></div><button class="apply-button" type="button" data-apply="People Operations Partner at Mono">Apply <span aria-hidden="true">↗</span></button></div>
+          </article>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-icon">⌕</span>
+          <h3>No exact matches yet</h3>
+          <p>Try a different keyword or location and we’ll keep looking.</p>
+          <button class="button button-outline" type="button" id="clear-search">Clear search</button>
+        </div>
+        <div class="jobs-footer"><span id="job-count">Showing 6 thoughtful opportunities</span><button class="button button-outline" type="button" data-toast="You’re viewing all currently featured opportunities.">Browse all jobs <span aria-hidden="true">→</span></button></div>
+      </section>
+
+      <section class="categories-section section-shell" id="how-it-works">
+        <div class="section-heading category-heading">
+          <div>
+            <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> FIND YOUR KIND OF WORK</div>
+            <h2>Big ideas need<br class="mobile-break" /> <span>all kinds of people.</span></h2>
+          </div>
+          <p class="section-aside">Explore roles by the things you love doing — and see where they can take you.</p>
+        </div>
+        <div class="category-grid">
+          <button class="category-card category-design" type="button" data-category-search="product">
+            <span class="category-icon">✳</span><span class="category-count">1,240 roles</span><strong>Design & product</strong><span class="category-arrow">↗</span><span class="category-art art-design" aria-hidden="true"></span>
+          </button>
+          <button class="category-card category-tech" type="button" data-category-search="engineering">
+            <span class="category-icon">⌘</span><span class="category-count">2,860 roles</span><strong>Technology</strong><span class="category-arrow">↗</span><span class="category-art art-tech" aria-hidden="true"></span>
+          </button>
+          <button class="category-card category-impact" type="button" data-category-search="sustainability">
+            <span class="category-icon">✺</span><span class="category-count">984 roles</span><strong>Climate & impact</strong><span class="category-arrow">↗</span><span class="category-art art-impact" aria-hidden="true"></span>
+          </button>
+          <button class="category-card category-growth" type="button" data-category-search="marketing">
+            <span class="category-icon">↗</span><span class="category-count">1,520 roles</span><strong>Growth & marketing</strong><span class="category-arrow">↗</span><span class="category-art art-growth" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="manifesto-section section-shell">
+        <div class="manifesto-orb" aria-hidden="true"><span></span><span></span><span></span><b>o.</b></div>
+        <div class="manifesto-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> MORE THAN A MATCH</div>
+          <h2>Your next job<br />should feel like <em>you.</em></h2>
+          <p>We believe finding work can feel less like searching and more like discovering. Start with what matters to you. We’ll help with the rest.</p>
+          <a class="button button-light" href="#job-search">Find your next move <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="manifesto-note"><span class="note-spark">✳</span><span><strong>Thoughtful by design</strong><small>Human-first work, always.</small></span></div>
+      </section>
+
+      <section class="newsletter-section section-shell" aria-labelledby="newsletter-title">
+        <div><div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> A LITTLE GOOD NEWS</div><h2 id="newsletter-title">Your next opportunity,<br /><span>in your inbox.</span></h2><p>Fresh roles and useful career notes. Thoughtfully selected, never noisy.</p></div>
+        <form class="newsletter-form" id="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required /><button class="button button-dark" type="submit">Keep me in the loop <span aria-hidden="true">→</span></button><small>By subscribing, you agree to our privacy policy. Unsubscribe anytime.</small></form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="Orbit home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="10.5" stroke="currentColor" stroke-width="2.5" /><ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="currentColor" stroke-width="2.5" transform="rotate(-35 16 16)" /><circle cx="25.8" cy="8.6" r="2.2" fill="currentColor" /></svg></span><span>orbit<span class="brand-period">.</span></span></a>
+      <p>Good work changes everything.</p>
+      <div class="footer-links"><a href="#opportunities">Find a job</a><a href="#companies">For companies</a><a href="#how-it-works">About Orbit</a><a href="mailto:hello@orbit.example">Contact</a></div>
+      <span class="copyright">© 2025 Orbit Careers</span>
+    </footer>
+
+    <dialog class="apply-dialog" id="apply-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close application form">×</button>
+      <div class="dialog-mark">o.</div>
+      <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER</div>
+      <h2 id="dialog-title">A good place to start.</h2>
+      <p class="dialog-description">You’re interested in <strong id="apply-role">this role</strong>. Add your details and we’ll save your interest here.</p>
+      <form id="apply-form">
+        <label for="applicant-name">Your name</label><input id="applicant-name" name="name" autocomplete="name" required placeholder="Alex Morgan" />
+        <label for="applicant-email">Email address</label><input id="applicant-email" name="email" type="email" autocomplete="email" required placeholder="alex@example.com" />
+        <label for="applicant-note">A note (optional)</label><textarea id="applicant-note" name="note" rows="3" placeholder="What makes this opportunity interesting to you?"></textarea>
+        <button class="button button-blue dialog-submit" type="submit">Save my interest <span aria-hidden="true">→</span></button>
+        <small>This is a frontend preview. Your information is not sent or stored.</small>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
